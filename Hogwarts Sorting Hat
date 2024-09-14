@@ -1,0 +1,113 @@
+from time import sleep
+
+gryffindor = 0
+ravenclaw = 0
+hufflepuff = 0
+slytherin  = 0
+
+print("Hello there you one, welcome to Hogwarts shool of Wizrdry and Witchcraft")
+print("Befor we continue with the ceremony we have to put you in one of the houses")
+print("You see here in Hogwarts we have 4 houses")
+print("First is Gryffindor which values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion. Its colours are scarlet and gold.")
+sleep(3)
+print("secondly we have Hufflepuff which values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger. Its colours are yellow and black.")
+sleep(3)
+print("Next we have Ravenclaw which values intelligence, knowledge, curiosity, creativity and wit. Its emblematic animal is the eagle. Its colours are blue and bronze.")
+sleep(3)
+print("And finally Slytherin which values ambition, leadership, self-preservation, cunning and resourcefulness. Its emblematic animal is the serpent. Its colours are emerald green and silver.")
+sleep(3)
+
+
+print("Q1) Do you like Dawn or Dusk")
+print("   1) Dawn")
+print("   2) Dusk")
+
+answer = int(input("Choose between 1 & 2: "))
+
+if answer == 1:
+  gryffindor += 1
+  ravenclaw += 1
+elif answer == 2:
+  hufflepuff += 1
+  slytherin += 1
+else:
+    print("Wrong input")
+
+sleep(2)
+
+print("\nQ2) When I’m dead, I want people to remember me as:")
+print("   1) The Good")
+print("   2) The Great")
+print("   3) The Wise")
+print("   4) The Bold")
+
+answer = int(input("Choose between 1 - 4: "))
+
+if answer == 1:
+  hufflepuff += 2
+elif answer == 2:
+  slytherin += 2
+elif answer == 3:
+  ravenclaw += 2
+elif answer == 4:
+  gryffindor += 2
+else:
+  print("Wrong input.")
+
+sleep(2)
+
+print("\nQ3) Which kind of instrument most pleases your ear?")
+print("   1) The violin")
+print("   2) The trumpet")
+print("   3) The piano")
+print("   4) The drum")
+
+answer = int(input("Choose between 1 - 4: "))
+
+if answer == 2:
+  hufflepuff += 4
+elif answer == 1:
+  slytherin += 4
+elif answer == 3:
+  ravenclaw += 4
+elif answer == 4:
+  gryffindor += 4
+else:
+  print("Wrong input.")
+
+sleep(2)
+
+print("\nQ4) Which of the houses would you like to be in?")
+print("   1) Gryffindor")
+print("   2) Hufflepuff")
+print("   3) Ravenclaw")
+print("   4) Slytherin")
+
+answer = int(input("Choose between 1 - 4: "))
+
+if answer == 1:
+  gryffindor += 8
+elif answer == 2:
+  hufflepuff += 8
+elif answer == 3:
+  ravenclaw += 8
+elif answer == 4:
+  slytherin += 8
+else:
+  print("Wrong input.")
+
+sleep(2)
+
+most_points = max(gryffindor, ravenclaw, hufflepuff, slytherin)
+
+sleep(1)
+
+if gryffindor == most_points:
+  print('You are in the Gryffidor house 🦁!')
+elif ravenclaw == most_points:
+  print('You are in the Ravenclaw house 🦅!')
+elif hufflepuff == most_points:
+  print('You are in the Hufflepuff house 🦡!')
+else:
+  print('You are in the Slytherin house 🐍!')
+
