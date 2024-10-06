@@ -1,0 +1,21 @@
+num1 = float(input('Enter the first number: '))
+num2 = float(input('Enter the second number: '))
+operation = input('Choose the operation you want to perform (+, -, *, /): ')
+
+if operation == '+':
+    totalnum = num1 + num2
+    print(f'The result of {num1} {operation} {num2} is {totalnum}')
+elif operation == '-':
+    totalnum = num1 - num2
+    print(f'The result of {num1} {operation} {num2} is {totalnum}')
+elif operation == '*':
+    totalnum = num1 * num2
+    print(f'The result of {num1} {operation} {num2} is {totalnum}')
+elif operation == '/':
+    if num2 != 0:
+        totalnum = num1 / num2
+        print(f'The result of {num1} {operation} {num2} is {totalnum}')
+    else:
+        print("Error: Division by zero is not allowed!")
+else:
+    print('Incorrect Operation. You need to input one of these operations: +, -, *, /.')
